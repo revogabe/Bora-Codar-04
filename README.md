@@ -30,4 +30,4 @@ Chat Mobile
 
 ✅ [Github](https://gabezin.github.com/)
 
-Feito com ♥ por Fernando Gomes
+Feito com ♥ por Daniel Gabriel
