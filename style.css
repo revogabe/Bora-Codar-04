@@ -14,12 +14,16 @@
   --txt-color: #e1e1e6;
   --button-color: #282843;
   --msg-me-color: #07847e;
-  --msg-to-color: #07847e;
+  --msg-to-color: #633bbc;
   --online-color: #00b37e;
 
   /*Font's*/
-  font-family: "Roboto" sans-serif;
+  --ff-text: "Roboto", sans-serif;
 }
+body * {
+  font-family: var(--ff-text);
+}
+
 body {
   background: var(--bg-second-color);
   display: flex;
@@ -32,38 +36,132 @@ body .box-sizing {
   background: var(--bg-primary-color);
   width: 100%;
   border-radius: 16px;
-  box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 32px 72px;
+  margin: 0 auto;
   padding: 28px;
 }
 
 .profile {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .box-sizing img {
-  width: fit-content;
+  object-fit: cover;
   width: 54px;
   height: 54px;
+  margin-right: 16px;
   border-radius: 50%;
 }
 
 .box-user {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .box-user #user-name {
   display: flex;
   flex-direction: column;
+  gap: 6px;
+  font-size: 8px;
 }
 
 .online-name {
   display: flex;
+  font-size: 12px;
+  color: var(--online-color);
+  align-items: center;
+}
+
+.online-name p {
+  margin-left: 4px;
+}
+
+#close-icon {
+  font-size: 20px;
+}
+
+#hours-date {
+  text-align: center;
+  margin-top: 14px;
+}
+
+.sendto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto 0;
+  align-items: flex-start;
+}
+
+.sendto h2 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.sendto p {
+  background: var(--msg-to-color);
+  width: fit-content;
+  margin-top: 10px;
+
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  padding: 14px;
+  border-radius: 0px 8px 8px 8px;
+}
+
+.sendme {
+  display: flex;
+  flex-direction: column;
+
+  margin: 30px auto 0;
+  align-items: flex-end;
+}
+
+.sendme h2 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.sendme p {
+  background: var(--msg-me-color);
+  width: fit-content;
+  margin-top: 10px;
+
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  padding: 14px;
+  border-radius: 8px 8px 0px 8px;
+}
+
+.send-bt {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--button-color);
+  padding: 14px 24px;
+  border-radius: 9999px;
+
+  margin-top: 30px;
+}
+
+.send-bt h3 {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.send-bt ion-icon {
+  font-size: 18px;
 }
