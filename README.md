@@ -28,6 +28,6 @@ Chat Mobile
 
 ## Deploy
 
-✅ [Github](https://gabezin.github.com/)
+✅ [Github](https://gabezin.github.io/Bora-Codar-04/)
 
 Feito com ♥ por Daniel Gabriel
